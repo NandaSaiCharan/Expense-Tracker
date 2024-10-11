@@ -1,0 +1,144 @@
+/* style.css */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #121212;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 0 20px;
+}
+
+.container {
+    max-width: 700px;
+    width: 100%;
+    background-color: #1e1e1e;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+    transition: all 0.3s ease;
+}
+
+.container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 188, 212, 0.4);
+}
+
+h1 {
+    text-align: center;
+    color: #00bcd4;
+    font-size: 2.5em;
+    margin-bottom: 25px;
+}
+
+label {
+    color: #bbbbbb;
+    font-size: 1.2em;
+}
+
+input[type="text"], input[type="number"], input[type="date"] {
+    width: 100%;
+    padding: 12px;
+    margin: 12px 0;
+    border: none;
+    border-bottom: 2px solid #00bcd4;
+    background-color: transparent;
+    color: #ffffff;
+    font-size: 1em;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+input:focus {
+    border-bottom-color: #03a9f4;
+}
+
+.btn {
+    width: 100%;
+    background-color: #00bcd4;
+    color: #ffffff;
+    padding: 12px;
+    font-size: 1.2em;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 15px;
+}
+
+.btn:hover {
+    background-color: #03a9f4;
+}
+
+#expense-list {
+    margin-top: 40px;
+}
+
+#expense-items {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+#expense-items li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2a2a2a;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+#expense-items li:hover {
+    background-color: #333;
+}
+
+#expense-items li span {
+    font-weight: 500;
+    color: #ffffff;
+}
+
+.delete-btn {
+    background-color: #ff5252;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.delete-btn:hover {
+    background-color: #ff1744;
+}
+
+h3 {
+    text-align: right;
+    color: #ffffff;
+    font-size: 1.5em;
+    margin-top: 20px;
+}
+
+@media (max-width: 700px) {
+    .container {
+        padding: 30px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    h3 {
+        font-size: 1.2em;
+    }
+}
